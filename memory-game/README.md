@@ -8,7 +8,7 @@
   * [@marina-ferreira](https://github.com/marina-ferreira)
 ___
 
-> Used technologies
+> **Used technologies**
 
 * HTML;
 * CSS;
