@@ -88,4 +88,8 @@ export class TodoListComponent implements OnInit {
   clearCompleted(): void {
     this.todos = this.todos.filter(todo => !todo.completed);
   }
+
+  checkAllTodos(): void {
+    this.todos.forEach(todo => todo.completed = (event.target as HTMLInputElement).checked);
+  }
 }
