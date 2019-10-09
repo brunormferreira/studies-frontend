@@ -7,7 +7,7 @@
   [(ngModel)]="todoTitle"
   (keyup.enter)="addTodo()">
 
-<div class="todo-item" *ngFor="let todo of todosFiltered()">
+<div class="todo-item" *ngFor="let todo of todosFiltered()" @fade>
   <div class="todo-item-left">
     <input type="checkbox" [(ngModel)]="todo.completed">
     <div
