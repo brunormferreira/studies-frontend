@@ -16,6 +16,7 @@
         [(ngModel)]="todo.title"
         (blur)="doneEdit(todo)"
         (keyup.enter)="doneEdit(todo)"
+        (keyup.esc)="cancelEdit(todo)"
         autofocus>
     </ng-template>
   </div>
