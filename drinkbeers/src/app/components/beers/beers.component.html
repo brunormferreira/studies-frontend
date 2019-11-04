@@ -1,12 +1,18 @@
 <h2>My Beers</h2>
-<ul class="beers">
-  <li 
+<div class="beers">
+
+  <div class="card"
     *ngFor="let beer of beers"
     [class.selected]="beer === selectedBeer"
     (click)="onSelect(beer)">
-    <span class="badge">{{beer.id}}</span> {{beer.type}} | {{beer.brand}}
-  </li>
-</ul>
+    <!-- <img src="..." alt="Avatar" style="width:100%"> -->
+    <div class="container">
+      <h4><b class="badge">{{beer.type}}</b></h4>
+      <p>{{beer.brand}}</p>
+    </div>
+  </div>
+
+</div>
 
 <div *ngIf="selectedBeer">
 
