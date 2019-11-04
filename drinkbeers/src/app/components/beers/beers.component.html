@@ -14,18 +14,4 @@
 
 </div>
 
-<div *ngIf="selectedBeer">
-
-  <h2>{{selectedBeer.type | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedBeer.id}}</div>
-  <div>
-    <label>type:
-      <input [(ngModel)]="selectedBeer.type" placeholder="type"/>
-    </label>
-    <br>
-    <label>brand:
-      <input [(ngModel)]="selectedBeer.brand" placeholder="brand"/>
-    </label>
-  </div>
-
-</div>
+<app-beers-detail [beer]="selectedBeer"></app-beers-detail>

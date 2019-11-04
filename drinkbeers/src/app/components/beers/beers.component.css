@@ -35,6 +35,11 @@
   background-color: #14702b;
 }
 
+.card.selected {
+  background-color: #14702b;
+  color: #fff;
+}
+
 .container {
   padding: 2px 16px;
 }

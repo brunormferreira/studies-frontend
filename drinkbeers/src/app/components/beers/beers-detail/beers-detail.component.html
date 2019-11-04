@@ -1,0 +1,15 @@
+<div *ngIf="beer">
+
+    <h2>{{beer.type | uppercase}} Details</h2>
+    <div><span>id: </span>{{beer.id}}</div>
+    <div>
+      <label>type:
+        <input [(ngModel)]="beer.type" placeholder="type"/>
+      </label>
+      <br>
+      <label>brand:
+        <input [(ngModel)]="beer.brand" placeholder="brand"/>
+      </label>
+    </div>
+
+  </div>
