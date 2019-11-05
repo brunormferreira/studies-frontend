@@ -16,4 +16,9 @@ export class BeerService {
     this.messageService.add('BeerService: fetched beers');
     return of(BEERS);
   }
+
+  getBeer(id: number): Observable<Beer> {
+    this.messageService.add(`BeerService: fetched beer id=${id}`);
+    return of(BEERS.find(beer => beer.id === id));
+  }
 }
