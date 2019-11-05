@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { BeersComponent } from './components/beers/beers.component';
 import { BeersDetailComponent } from './components/beers/beers-detail/beers-detail.component';
 import { MessagesComponent } from './components/messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BeersComponent,
     BeersDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
