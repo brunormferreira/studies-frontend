@@ -23,7 +23,8 @@ export class BeersComponent implements OnInit {
   }
 
   getBeers(): void {
-    this.beers = this.beerService.getBeers();
+    this.beerService.getBeers()
+      .subscribe(beer => this.beers = beer);
   }
 
 }
