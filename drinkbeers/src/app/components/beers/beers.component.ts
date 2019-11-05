@@ -10,16 +10,11 @@ import { BeerService } from '../../services/beer.service';
 })
 export class BeersComponent implements OnInit {
   beers: Beer[];
-  selectedBeer: Beer;
 
   constructor(private beerService: BeerService) { }
 
   ngOnInit() {
     this.getBeers();
-  }
-
-  onSelect(beer: Beer): void {
-    this.selectedBeer = beer;
   }
 
   getBeers(): void {

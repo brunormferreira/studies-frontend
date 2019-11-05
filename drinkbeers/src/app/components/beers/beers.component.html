@@ -4,7 +4,7 @@
   <div class="card"
     *ngFor="let beer of beers"
     [class.selected]="beer === selectedBeer"
-    (click)="onSelect(beer)">
+    routerLink="/detail/{{beer.id}}">
     <!-- <img src="..." alt="Avatar" style="width:100%"> -->
     <div class="container">
       <h4><b class="badge">{{beer.type}}</b></h4>
@@ -13,5 +13,3 @@
   </div>
 
 </div>
-
-<app-beers-detail [beer]="selectedBeer"></app-beers-detail>
