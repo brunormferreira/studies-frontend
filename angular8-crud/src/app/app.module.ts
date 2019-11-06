@@ -1,22 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { UsersComponent } from './components/users/users.component';
-import { UsersDetailsComponent } from './components/users/users-details/users-details.component';
+import { StudentCreateComponent } from './components/student-create/student-create.component';
+import { StudentEditComponent } from './components/student-edit/student-edit.component';
+import { StudentListComponent } from './components/student-list/student-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    UsersComponent,
-    UsersDetailsComponent
+    StudentCreateComponent,
+    StudentEditComponent,
+    StudentListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
