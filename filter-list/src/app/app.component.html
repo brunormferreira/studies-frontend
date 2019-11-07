@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<input [(ngModel)]="searchText" placeholder="search text goes here">
+<ul style="list-style: none;">
+  <li *ngFor="let item of list | filter: searchText">
+    {{item}}
+  </li>
+</ul>
